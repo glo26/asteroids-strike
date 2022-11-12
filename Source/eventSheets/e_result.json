@@ -1,0 +1,156 @@
+{
+	"name": "e_result",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "scoreboardLocation",
+			"type": "string",
+			"initialValue": "scoreboard/",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 668998493355300
+		},
+		{
+			"eventType": "variable",
+			"name": "SEP",
+			"type": "string",
+			"initialValue": "\"SEP\"",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 203174109027780
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 601019015956284
+				}
+			],
+			"actions": [],
+			"sid": 369805011624798,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 867478061994797,
+							"parameters": {
+								"variable": "score",
+								"comparison": 4,
+								"value": "hiscore"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 861162424505372,
+							"parameters": {
+								"variable": "hiscore",
+								"value": "score"
+							}
+						},
+						{
+							"id": "advanced-write-leaderboard",
+							"objectClass": "FirebaseV9RDBasic",
+							"sid": 423674100686406,
+							"parameters": {
+								"locationlink": "scoreboardLocation&walletAddress",
+								"key": "\"address,score,short\"",
+								"separator": "SEP",
+								"value": "walletAddress&SEP&hiscore&SEP&shortAddress",
+								"enforce-string": false,
+								"id": "\"\""
+							}
+						}
+					],
+					"sid": 342621041139564
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "GameText",
+							"sid": 788959462925564,
+							"parameters": {
+								"instance-variable": "use",
+								"comparison": 0,
+								"value": "\"score\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "GameText",
+							"sid": 122465106153273,
+							"parameters": {
+								"text": "\"Score: \"&score"
+							}
+						}
+					],
+					"sid": 402289922600959
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "GameText",
+							"sid": 596624091207756,
+							"parameters": {
+								"instance-variable": "use",
+								"comparison": 0,
+								"value": "\"hiscore\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "GameText",
+							"sid": 758281229049859,
+							"parameters": {
+								"text": "\"Hi-Score: \"&hiscore"
+							}
+						}
+					],
+					"sid": 297547531437789
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 276433590297062,
+					"parameters": {
+						"object": "Button"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 680337299713130,
+					"parameters": {
+						"layout": "Scoreboard"
+					}
+				}
+			],
+			"sid": 160402256331470
+		}
+	],
+	"sid": 644655977907292
+}

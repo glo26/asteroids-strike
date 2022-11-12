@@ -1,0 +1,13 @@
+{
+	"name": "Asteroids",
+	"plugin-id": "Sprite",
+	"sid": 158960014683112,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"AsteroidBig",
+		"AsteroidMedium",
+		"AsteroidSmall"
+	]
+}

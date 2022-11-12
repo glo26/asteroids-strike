@@ -1,0 +1,199 @@
+{
+	"name": "e_scoreboard",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 358375821993304
+				}
+			],
+			"actions": [
+				{
+					"id": "advanced-read-leaderboard",
+					"objectClass": "FirebaseV9RDBasic",
+					"sid": 640891268845091,
+					"parameters": {
+						"location": "scoreboardLocation",
+						"order-child": "\"score\"",
+						"size": "10",
+						"id": "\"scoreboard\"",
+						"sync": false,
+						"rank-key": "\"address\"",
+						"rank-data": "walletAddress",
+						"read-json": false,
+						"read-proui": false
+					}
+				}
+			],
+			"sid": 569374862444628
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-adv-trigger",
+					"objectClass": "FirebaseV9RDBasic",
+					"sid": 897325303984823,
+					"parameters": {
+						"id": "\"scoreboard\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 479106062194863,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "GameText",
+							"sid": 455440571339365,
+							"parameters": {
+								"instance-variable": "use",
+								"comparison": 0,
+								"value": "\"myrank\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "GameText",
+							"sid": 194734928634265,
+							"parameters": {
+								"text": "FirebaseV9RDBasic.readRank(\"scoreboard\")&\". \"&shortAddress"
+							}
+						}
+					],
+					"sid": 377090248583680
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "GameText",
+							"sid": 605537408786137,
+							"parameters": {
+								"instance-variable": "use",
+								"comparison": 0,
+								"value": "\"myscore\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "GameText",
+							"sid": 842450793524866,
+							"parameters": {
+								"text": "hiscore"
+							}
+						}
+					],
+					"sid": 644499274067699
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 159323392945681,
+							"parameters": {
+								"name": "\"\"",
+								"start-index": "1",
+								"end-index": "10"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 658474793407196,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "GameText",
+									"sid": 556144884040624,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"address\"&loopindex"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "GameText",
+									"sid": 244323167713159,
+									"parameters": {
+										"text": "loopindex&\". \"&FirebaseV9RDBasic.readLeaderboard(\"scoreboard\",\"short\",loopindex-1)"
+									}
+								}
+							],
+							"sid": 171102591400844
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "GameText",
+									"sid": 136412480430719,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"score\"&loopindex"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "GameText",
+									"sid": 847787973607746,
+									"parameters": {
+										"text": "FirebaseV9RDBasic.readLeaderboard(\"scoreboard\",\"score\",loopindex-1)"
+									}
+								}
+							],
+							"sid": 454088312441178
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 882201401440214,
+					"parameters": {
+						"object": "Button"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 818760223414541,
+					"parameters": {
+						"layout": "Start"
+					}
+				}
+			],
+			"sid": 652373766171626
+		}
+	],
+	"sid": 480835010807736
+}

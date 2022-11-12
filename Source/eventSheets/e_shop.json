@@ -1,0 +1,788 @@
+{
+	"name": "e_shop",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "paymentPerkStatus",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 704505237452120
+		},
+		{
+			"eventType": "variable",
+			"name": "paymentPerkTag",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 580404352558172
+		},
+		{
+			"eventType": "variable",
+			"name": "selectedShopPerk",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 293318985212119
+		},
+		{
+			"eventType": "variable",
+			"name": "PERK_SPREAD_GUN",
+			"type": "string",
+			"initialValue": "Spread Gun",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 689574806857625
+		},
+		{
+			"eventType": "variable",
+			"name": "PERK_LIFE_UP",
+			"type": "string",
+			"initialValue": "Life Up",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 354048696331885
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 529134766977570,
+					"parameters": {
+						"object": "Button"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Button",
+					"sid": 322759483858376,
+					"parameters": {
+						"instance-variable": "use",
+						"comparison": 0,
+						"value": "\"back\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 111111055981971,
+					"parameters": {
+						"layout": "Start"
+					}
+				}
+			],
+			"sid": 389207402349348
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 288579252043202
+				}
+			],
+			"actions": [],
+			"sid": 217535903421658,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Perks",
+							"sid": 137916817131487,
+							"parameters": {
+								"instance-variable": "no",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "ShopCursor",
+							"sid": 913858405684202,
+							"parameters": {
+								"object": "Perks",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 150235770007512,
+							"parameters": {
+								"variable": "selectedShopPerk",
+								"value": "Perks.AnimationName"
+							}
+						}
+					],
+					"sid": 670194731159112
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "GameText",
+					"sid": 647739711237867,
+					"parameters": {
+						"instance-variable": "use",
+						"comparison": 0,
+						"value": "\"title\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "GameText",
+					"sid": 185206928377784,
+					"parameters": {
+						"text": "PerksData.At(PerksData.IndexOf(selectedShopPerk),0)"
+					}
+				}
+			],
+			"sid": 578454915490195
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "GameText",
+					"sid": 342958704320923,
+					"parameters": {
+						"instance-variable": "use",
+						"comparison": 0,
+						"value": "\"description\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "GameText",
+					"sid": 223509640263849,
+					"parameters": {
+						"text": "PerksData.At(PerksData.IndexOf(selectedShopPerk),1)"
+					}
+				}
+			],
+			"sid": 477839243570338
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "GameText",
+					"sid": 404719088740234,
+					"parameters": {
+						"instance-variable": "use",
+						"comparison": 0,
+						"value": "\"cost\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "GameText",
+					"sid": 631262696402321,
+					"parameters": {
+						"text": "PerksData.At(PerksData.IndexOf(selectedShopPerk),2)&\" $usdt\""
+					}
+				}
+			],
+			"sid": 502225799806686
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 702147835796208,
+					"parameters": {
+						"object": "Perks"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "ShopCursor",
+					"sid": 821267353151890,
+					"parameters": {
+						"object": "Perks",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 398522253951924,
+					"parameters": {
+						"variable": "selectedShopPerk",
+						"value": "Perks.AnimationName"
+					}
+				}
+			],
+			"sid": 275005661788614
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 316833760564715,
+					"parameters": {
+						"object": "Button"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Button",
+					"sid": 446191037378996,
+					"parameters": {
+						"instance-variable": "use",
+						"comparison": 0,
+						"value": "\"buy\""
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Button",
+					"sid": 567270964160766
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 507839720926403,
+					"parameters": {
+						"variable": "paymentPerkStatus",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 269935087636972,
+					"parameters": {
+						"variable": "paymentPerkTag",
+						"value": "selectedShopPerk"
+					}
+				},
+				{
+					"type": "script",
+					"script": "runtime.globalVars[\"paymentPerkStatus\"] = await globalThis.payUSDT(0.002);"
+				}
+			],
+			"sid": 980763260246668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 778880510115205,
+					"parameters": {
+						"variable": "selectedShopPerk",
+						"comparison": 0,
+						"value": "PERK_LIFE_UP"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 104574262806639,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-key",
+							"objectClass": "PlayerPerks",
+							"sid": 698932273024183,
+							"parameters": {
+								"key": "PERK_LIFE_UP"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 774873387606139,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Button",
+									"sid": 846663004527331,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"buy\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "GameText",
+									"sid": 642615032716386,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"buy\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Button",
+									"sid": 987241338306628,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "GameText",
+									"sid": 977001680637686,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 712098843554257
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "GameText",
+									"sid": 458524147921580,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"cost\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "GameText",
+									"sid": 962733067776220,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 821981893847687
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 702777614575394
+						}
+					],
+					"actions": [],
+					"sid": 268754799551265,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Button",
+									"sid": 329738564623005,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"buy\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "GameText",
+									"sid": 952056117923973,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"buy\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Button",
+									"sid": 452853638978559,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "GameText",
+									"sid": 851865019553852,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 497166618824916
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "GameText",
+									"sid": 205923553397880,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"cost\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "GameText",
+									"sid": 287495383830282,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 620911439917675
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 751980691877371,
+					"parameters": {
+						"variable": "selectedShopPerk",
+						"comparison": 0,
+						"value": "PERK_SPREAD_GUN"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 364613972722015,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-key",
+							"objectClass": "PlayerPerks",
+							"sid": 638491941870283,
+							"parameters": {
+								"key": "PERK_SPREAD_GUN"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 185378271891170,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Button",
+									"sid": 141555122382339,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"buy\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "GameText",
+									"sid": 489215182347771,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"buy\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Button",
+									"sid": 723912855314937,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "GameText",
+									"sid": 856607452560736,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 180295437435711
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "GameText",
+									"sid": 460859049049580,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"cost\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "GameText",
+									"sid": 386588195959585,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 309088665110819
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 921085508970632
+						}
+					],
+					"actions": [],
+					"sid": 803919089516948,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Button",
+									"sid": 147851417652214,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"buy\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "GameText",
+									"sid": 922215969820484,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"buy\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Button",
+									"sid": 406987983747534,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "GameText",
+									"sid": 713127714788779,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 688450464577003
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "GameText",
+									"sid": 180274012068670,
+									"parameters": {
+										"instance-variable": "use",
+										"comparison": 0,
+										"value": "\"cost\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "GameText",
+									"sid": 962888155126037,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 965606693991750
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 814376052504606,
+					"parameters": {
+						"variable": "paymentPerkStatus",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 790732318268933
+				}
+			],
+			"actions": [],
+			"sid": 311109885501390,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 242109471358121,
+							"parameters": {
+								"variable": "paymentPerkTag",
+								"comparison": 0,
+								"value": "PERK_SPREAD_GUN"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "PlayerPerks",
+							"sid": 367468804571030,
+							"parameters": {
+								"key": "PERK_SPREAD_GUN",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 106917628955976
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 310035617966141,
+							"parameters": {
+								"variable": "paymentPerkTag",
+								"comparison": 0,
+								"value": "PERK_LIFE_UP"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "PlayerPerks",
+							"sid": 165929654584407,
+							"parameters": {
+								"key": "PERK_LIFE_UP",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 548031993124379
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 238674894055345,
+							"parameters": {
+								"variable": "paymentPerkStatus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 774571411127890,
+							"parameters": {
+								"variable": "paymentPerkTag",
+								"value": "\"\""
+							}
+						}
+					],
+					"sid": 357934520673884
+				}
+			]
+		}
+	],
+	"sid": 103689343664427
+}

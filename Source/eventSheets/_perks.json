@@ -1,0 +1,101 @@
+{
+	"name": "_perks",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 436270386594735
+				}
+			],
+			"actions": [],
+			"sid": 212295832260841,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-empty",
+							"objectClass": "PerksData",
+							"sid": 149347750893784
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "spread gun"
+						},
+						{
+							"id": "push",
+							"objectClass": "PerksData",
+							"sid": 632378120998055,
+							"parameters": {
+								"where": "back",
+								"value": "\"Spread Gun\"",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "PerksData",
+							"sid": 727370440000730,
+							"parameters": {
+								"x": "PerksData.Width-1",
+								"y": "1",
+								"value": "\"Shoot 4 bullets to the front in form of cone, powerful in short range.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "PerksData",
+							"sid": 534802384025653,
+							"parameters": {
+								"x": "PerksData.Width-1",
+								"y": "2",
+								"value": "30"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "life up"
+						},
+						{
+							"id": "push",
+							"objectClass": "PerksData",
+							"sid": 218278333231588,
+							"parameters": {
+								"where": "back",
+								"value": "\"Life Up\"",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "PerksData",
+							"sid": 914983155638386,
+							"parameters": {
+								"x": "PerksData.Width-1",
+								"y": "1",
+								"value": "\"Add 2 more life to the spaceship.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "PerksData",
+							"sid": 762070840161723,
+							"parameters": {
+								"x": "PerksData.Width-1",
+								"y": "2",
+								"value": "30"
+							}
+						}
+					],
+					"sid": 672999592784779
+				}
+			]
+		}
+	],
+	"sid": 109519709453333
+}

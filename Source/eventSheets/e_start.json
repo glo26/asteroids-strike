@@ -1,0 +1,622 @@
+{
+	"name": "e_start",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "_perks"
+		},
+		{
+			"eventType": "variable",
+			"name": "login",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 485664245746063
+		},
+		{
+			"eventType": "variable",
+			"name": "walletAddress",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 664579518085441
+		},
+		{
+			"eventType": "variable",
+			"name": "shortAddress",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 199549726987453
+		},
+		{
+			"eventType": "variable",
+			"name": "paymentTicketStatus",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 385774846968206
+		},
+		{
+			"eventType": "variable",
+			"name": "tickets",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 930254081023328
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 342413430654123
+				}
+			],
+			"actions": [],
+			"sid": 624570723000912,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 843653365920363,
+							"parameters": {
+								"variable": "login"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 251382353472839,
+							"parameters": {
+								"layer": "\"buttons\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"type": "script",
+							"script": "await globalThis.startMoralis();\n"
+						}
+					],
+					"sid": 975879723532887
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 582777692502532,
+					"parameters": {
+						"object": "Button"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Button",
+					"sid": 258037078865836,
+					"parameters": {
+						"instance-variable": "use",
+						"comparison": 0,
+						"value": "\"start\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 820080895831256,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 236433643870865,
+							"parameters": {
+								"variable": "login"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"type": "script",
+							"script": "runtime.globalVars[\"walletAddress\"] = await globalThis.login();"
+						}
+					],
+					"sid": 465149253929160
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 291750133702175
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 989885918218223,
+							"parameters": {
+								"layout": "Game"
+							}
+						}
+					],
+					"sid": 482024669061065
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 278501617264215,
+					"parameters": {
+						"object": "Button"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Button",
+					"sid": 279228497737618
+				}
+			],
+			"actions": [],
+			"sid": 194840665146040,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Button",
+							"sid": 576747704619800,
+							"parameters": {
+								"instance-variable": "use",
+								"comparison": 0,
+								"value": "\"shop\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 140950197304258,
+							"parameters": {
+								"layout": "Shop"
+							}
+						}
+					],
+					"sid": 565051765847541
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Button",
+							"sid": 517534024990389,
+							"parameters": {
+								"instance-variable": "use",
+								"comparison": 0,
+								"value": "\"scoreboard\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 448001987107098,
+							"parameters": {
+								"layout": "Scoreboard"
+							}
+						}
+					],
+					"sid": 881015958257590
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 678728832392442,
+					"parameters": {
+						"object": "Button"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Button",
+					"sid": 902710507801894,
+					"parameters": {
+						"instance-variable": "use",
+						"comparison": 0,
+						"value": "\"buy ticket\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 292767950196210,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 100111562344160,
+							"parameters": {
+								"variable": "login"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 765211733246708,
+							"parameters": {
+								"variable": "paymentTicketStatus",
+								"value": "0"
+							}
+						},
+						{
+							"type": "script",
+							"script": "runtime.globalVars[\"paymentTicketStatus\"] = await globalThis.payUSDT(0.001);"
+						}
+					],
+					"sid": 291485453709335
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 574289048374893,
+					"parameters": {
+						"variable": "paymentTicketStatus",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 160520500071127
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 460128876066169,
+					"parameters": {
+						"variable": "tickets",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 101155003744070,
+					"parameters": {
+						"variable": "paymentTicketStatus",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 655301144920311
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 865883506626705,
+					"parameters": {
+						"variable": "login"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 225249235008003
+				}
+			],
+			"actions": [],
+			"sid": 111844929805180,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "GameText",
+							"sid": 533447999276759,
+							"parameters": {
+								"instance-variable": "use",
+								"comparison": 0,
+								"value": "\"start\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "GameText",
+							"sid": 894346273607654,
+							"parameters": {
+								"text": "\"Start Game\""
+							}
+						}
+					],
+					"sid": 181126747494105
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "GameText",
+							"sid": 852248084623525,
+							"parameters": {
+								"instance-variable": "use",
+								"comparison": 0,
+								"value": "\"info\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "GameText",
+							"sid": 866040862435926,
+							"parameters": {
+								"text": "\"Welcome, \"&walletAddress"
+							}
+						}
+					],
+					"sid": 164919688339329
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 629369921704786,
+					"parameters": {
+						"variable": "walletAddress",
+						"comparison": 1,
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 431967292174414
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 438705686755563,
+					"parameters": {
+						"variable": "login",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 797676120563401,
+					"parameters": {
+						"variable": "shortAddress",
+						"value": "\"0x\"&left(walletAddress,3)&\"...\"&right(walletAddress,4)"
+					}
+				},
+				{
+					"id": "advanced-read-data",
+					"objectClass": "FirebaseV9RDBasic",
+					"sid": 195838514586371,
+					"parameters": {
+						"location-link": "scoreboardLocation&walletAddress&\"/score\"",
+						"id": "\"hiscore\"",
+						"sync": false,
+						"read-json": false,
+						"read-array": false,
+						"read-proui": false
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 415370117828810,
+					"parameters": {
+						"layer": "\"buttons\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 145478301113145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-adv-trigger",
+					"objectClass": "FirebaseV9RDBasic",
+					"sid": 476624340061582,
+					"parameters": {
+						"id": "\"hiscore\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 824551829364499,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-adv-noexist2",
+							"objectClass": "FirebaseV9RDBasic",
+							"sid": 522374645687312,
+							"parameters": {
+								"id": "\"hiscore\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 331205807435763,
+							"parameters": {
+								"variable": "hiscore",
+								"value": "FirebaseV9RDBasic.readValue(\"hiscore\")"
+							}
+						}
+					],
+					"sid": 940711045256304
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 829218863872708,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 540193065828785,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "GameText",
+							"sid": 202995069489807,
+							"parameters": {
+								"instance-variable": "use",
+								"comparison": 0,
+								"value": "\"ticket\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "GameText",
+							"sid": 237986814694617,
+							"parameters": {
+								"text": "\"You have \"&tickets&\" \"&(tickets>1?\"tickets\":\"ticket\")&\" left\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GameText",
+							"sid": 268743403205111,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 165849155014609,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GameText",
+							"sid": 284930433628552,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 670386175817314,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GameText",
+							"sid": 808825421246532,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 670309600187540,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GameText",
+							"sid": 658014294155615,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 978329036717022
+				}
+			]
+		}
+	],
+	"sid": 390806243302909
+}
