@@ -1,0 +1,489 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 31702,
+	"name": "Galaxy Gang Asteroid Strike",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sparsha_FirebaseSDK",
+			"name": "FirebaseV9 SDK",
+			"author": "Sparsha",
+			"version": "10.2.1",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sparsha_FirebaseRealtimeDatabase",
+			"name": "FirebaseV9 RD Basic",
+			"author": "Sparsha",
+			"version": "9.1.1",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Json",
+			"name": "JSON",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Car",
+			"name": "Car",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "wrap",
+			"name": "Wrap",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		}
+	],
+	"uniqueId": "kjl9vpi8wjc",
+	"objectTypes": {
+		"items": [
+			"Player",
+			"AsteroidSmall",
+			"AsteroidMedium",
+			"AsteroidBig",
+			"LaserBasic1",
+			"Keyboard",
+			"HitParticle",
+			"GameText",
+			"Explosion",
+			"Bg",
+			"logo",
+			"AsteroidsStrikeTitle",
+			"Button",
+			"Touch",
+			"Highscore",
+			"Gameover",
+			"Perks",
+			"BuyPerksHeader",
+			"PerksData",
+			"ShopCursor",
+			"PlayerPerks",
+			"Lifes",
+			"Enemy",
+			"LaserEnemy1",
+			"HitParticle2",
+			"HitParticle3",
+			"HitParticle4",
+			"Audio",
+			"Thruster"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"FirebaseV9SDK",
+					"FirebaseV9RDBasic",
+					"JSONScore"
+				],
+				"subfolders": [],
+				"name": "firebase"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"Asteroids"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Start",
+			"Game",
+			"Result",
+			"Scoreboard",
+			"Shop",
+			"Hidden",
+			"Equip"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"e_game",
+			"e_start",
+			"e_result",
+			"e_scoreboard",
+			"e_shop",
+			"_perks",
+			"e_equip"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [
+				{
+					"name": "moralis.min.js",
+					"type": "text/javascript",
+					"sid": 987115655272144,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "main.js",
+					"type": "application/javascript",
+					"sid": 174757763120615,
+					"script-info": {
+						"purpose": "main"
+					}
+				},
+				{
+					"name": "web3.js",
+					"type": "application/javascript",
+					"sid": 975447940779893,
+					"script-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "laser basic 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 769437107061062,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "laser enemy 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 883781644092435,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "explosion.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 648092187971446,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hit meteor.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 584590129488643,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hit enemy.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 748891903201809,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "thrust.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 624361938692915,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 874197110252380,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 824088158331712,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 672417313287286,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 348017321385327,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 991778076982347,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 284584343938855,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 556223132089897,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "portrait",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "flat"
+	},
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
+	"firstLayout": "Start"
+}
