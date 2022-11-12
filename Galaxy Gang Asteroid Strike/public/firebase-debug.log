@@ -1,0 +1,67 @@
+[debug] [2022-11-11T09:54:27.297Z] ----------------------------------------------------------------------
+[debug] [2022-11-11T09:54:27.299Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rioca\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-11T09:54:27.300Z] CLI Version:   11.16.0
+[debug] [2022-11-11T09:54:27.300Z] Platform:      win32
+[debug] [2022-11-11T09:54:27.300Z] Node Version:  v16.14.2
+[debug] [2022-11-11T09:54:27.302Z] Time:          Fri Nov 11 2022 16:54:27 GMT+0700 (Western Indonesia Time)
+[debug] [2022-11-11T09:54:27.302Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-11T09:54:27.311Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-11T09:54:27.312Z] > authorizing via signed-in user (riocascade@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\MY DATA\Galeh\Spero Studio\Galaxy Gang\Asteroid Strike\build\Galaxy Gang Asteroid Strike
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-11-11T09:55:14.601Z] > refreshing access token with scopes: []
+[debug] [2022-11-11T09:55:14.603Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-11T09:55:14.603Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-11T09:55:14.701Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-11-11T09:55:14.701Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-11T09:55:14.701Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-11-11T09:55:14.701Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"asteroids-strike","name":"asteroids-strike"}
+[debug] [2022-11-11T09:55:16.015Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 401
+[debug] [2022-11-11T09:55:16.015Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.CreateProject"}}]}}
+[debug] [2022-11-11T09:55:16.017Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\rioca\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\rioca\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2022-11-11T09:55:26.031Z] ----------------------------------------------------------------------
+[debug] [2022-11-11T09:55:26.033Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rioca\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-11T09:55:26.034Z] CLI Version:   11.16.0
+[debug] [2022-11-11T09:55:26.034Z] Platform:      win32
+[debug] [2022-11-11T09:55:26.034Z] Node Version:  v16.14.2
+[debug] [2022-11-11T09:55:26.035Z] Time:          Fri Nov 11 2022 16:55:26 GMT+0700 (Western Indonesia Time)
+[debug] [2022-11-11T09:55:26.036Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-11T09:55:26.044Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-11T09:55:26.045Z] > authorizing via signed-in user (riocascade@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\MY DATA\Galeh\Spero Studio\Galaxy Gang\Asteroid Strike\build\Galaxy Gang Asteroid Strike
+
+[error] 
+[error] Error: Aborted by user.
