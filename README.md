@@ -20,13 +20,13 @@ Business Model: Asteroids Strike adopts a ‘digital arcade’ business model wh
 Rewards: Players on the leaderboard every week gets rewards in the form of $USDT and/or $GXG (Galaxy Gang’s Token).
 	
 # How to Play:
-Player logs in to Metamask.
-They connect to the Polygon network.
-They can then log in to Asteroids Strike with Metamask.
-Players will be given a virtual spaceship.
-Players have to buy fuel for their spaceship before playing using $USDT ($USDT 1 = 3 fuel).
-1 round of gameplay takes up 1 fuel.
-Players can get permanent upgrades to their spaceships in the in-game shop using their $USDT as well.
+1. Player logs in to Metamask.
+2. They connect to the Polygon network.
+3. They can then log in to Asteroids Strike with Metamask.
+4. Players will be given a virtual spaceship.
+5. Players have to buy fuel for their spaceship before playing using $USDT ($USDT 1 = 3 fuel). 1 round of gameplay takes up 1 fuel.
+6. Players can get permanent upgrades to their spaceships in the in-game shop using their $USDT as well.
+7. Players are able to top up as needed to increase winning based on skill-based performance rather than chance-based opportunities.
 
 NFT Assets: Every item in the shop except consumables are NFTs – this means that players have complete ownership over their collectibles or upgrades. These NFTs can be sold to other players in NFT marketplaces. The NFTs you purchase and receive in Asteroids Strike will also have their uses in Galaxy Gang’s future games.
 # Contact Us
