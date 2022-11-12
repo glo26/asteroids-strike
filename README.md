@@ -4,9 +4,7 @@ Galaxy Gang is an indie team aiming to bring the play-to-earn experience that mo
 
 # About the defi Gaming Platform:
 
-Galaxy Gang Asteroids Strike is a blockchain-run arcade game inspired by the classic Asteroids game. Players can purchase ‘credits’ using crypto to play. It is geared toward the gaming communities in Southeast Asia, as the game allows for a lower barrier of cost to entry compared to other P2E games in the industry. It also recognizes 'low data' mode to accommodate for more players to join the web3 community with less friction.
-
-A game running on the Polygon Chain created for the Galaxy Gang Universe, modeled after the infamous Asteroids-style Retro Style. We will also follow with 'Crazy Rich Club' within the Galaxy Gang Universe in fixing the problem of lack of transparency in defi gaming ecosystem. See: https://github.com/glo26/crazyrichclub. The tech stacks used include Moralis, Polygon Chain, Firebase + Google Cloud Network, Multichain, followed by Moralis Metaverse SDK (soon).
+Galaxy Gang Asteroids Strike is a blockchain-run arcade game inspired by the classic Asteroids game. Players can purchase ‘credits’ using crypto to play. It is geared toward the gaming communities in Southeast Asia, as the game allows for a lower barrier of cost to entry compared to other P2E games in the industry. It also recognizes 'low data' mode to accommodate for more players to join the web3 community with less friction. The tech stacks used include Moralis, Polygon Chain, Firebase + Google Cloud Network, Multichain, followed by Moralis Metaverse SDK (soon).
 
 --
 
@@ -33,6 +31,8 @@ Go to: https://galaxygang-75f2a.web.app/
 7. Players are able to top up as needed to increase winning based on skill-based performance rather than chance-based opportunities.
 
 NFT Assets: Every item in the shop except consumables are NFTs – this means that players have complete ownership over their collectibles or upgrades. These NFTs can be sold to other players in NFT marketplaces. The NFTs you purchase and receive in Asteroids Strike will also have their uses in Galaxy Gang’s future games. | For more information, access our whitepaper + deck here: https://bit.ly/gg-asteroids
+
+Roadmap: We will also follow with 'Crazy Rich Club' within the Galaxy Gang Universe in fixing the problem of lack of transparency in defi gaming ecosystem. See: https://github.com/glo26/crazyrichclub. 
 
 # Contact Us
 galaxygangteam@gmail.com
