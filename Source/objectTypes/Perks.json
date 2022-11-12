@@ -1,0 +1,88 @@
+{
+	"name": "Perks",
+	"plugin-id": "Sprite",
+	"sid": 676882617375934,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "no",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 332548067124175
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 386,
+						"height": 386,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2546489,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 210901217699664,
+				"name": "Spread Gun",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 388,
+						"height": 388,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6437285,
+						"collisionPoly": {
+							"points": [
+								0.028350515463917526,
+								0.002577319587628866,
+								0.5154639175257731,
+								0.002577319587628866,
+								0.9896907216494846,
+								0.01288659793814433,
+								0.9948453608247423,
+								0.4896907216494845,
+								0.9948453608247423,
+								0.9690721649484536,
+								0.5154639175257731,
+								0.9948453608247423,
+								0.012886597938144256,
+								0.9896907216494846,
+								0.0025773195876287926,
+								0.4896907216494845
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 591492803006178,
+				"name": "Life Up",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

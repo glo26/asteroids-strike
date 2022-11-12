@@ -1,0 +1,81 @@
+{
+	"name": "AsteroidBig",
+	"plugin-id": "Sprite",
+	"sid": 765063178983077,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "hp",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 553151535298229
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "wrap",
+			"name": "Wrap",
+			"sid": 674474488499905
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 441747794255105
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 215528952412046
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 144,
+						"height": 152,
+						"originX": 0.5208333333333334,
+						"originY": 0.5592105263157895,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5310657,
+						"collisionPoly": {
+							"points": [
+								0.041666666666666664,
+								0.3684210526315789,
+								0.5208333333333334,
+								0.02631578947368421,
+								0.9375,
+								0.42105263157894735,
+								0.9791666666666666,
+								0.5592105263157895,
+								0.9513888888888888,
+								0.7039473684210527,
+								0.5208333333333334,
+								0.9539473684210527,
+								0.0625,
+								0.7236842105263158,
+								0.013888888888888888,
+								0.5592105263157895
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 460767845714687,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

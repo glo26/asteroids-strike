@@ -1,0 +1,73 @@
+{
+	"name": "LaserBasic1",
+	"plugin-id": "Sprite",
+	"sid": 809425188601553,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 784685895530115
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 360257406891947
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 338641258283021
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 123,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2061069,
+						"collisionPoly": {
+							"points": [
+								0.38761072834645666,
+								0.4000264392887831,
+								0.5,
+								0.3680348998611937,
+								0.6046382874015749,
+								0.4000264392887831,
+								0.6511441929133858,
+								0.5,
+								0.6046382874015749,
+								0.5919756758543195,
+								0.5,
+								0.6239672152819089,
+								0.38761072834645666,
+								0.5919756758543195,
+								0.3256028543307086,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 903220347757105,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

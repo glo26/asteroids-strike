@@ -1,0 +1,68 @@
+{
+	"name": "LaserEnemy1",
+	"plugin-id": "Sprite",
+	"sid": 206152113741201,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 213727052203061
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 527659777704788
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 129,
+						"height": 125,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9396486,
+						"collisionPoly": {
+							"points": [
+								0.3875968992248062,
+								0.4,
+								0.5,
+								0.368,
+								0.6046511627906976,
+								0.4,
+								0.6511627906976745,
+								0.5,
+								0.6046511627906976,
+								0.592,
+								0.5,
+								0.624,
+								0.3875968992248062,
+								0.592,
+								0.32558139534883723,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 985224480661540,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

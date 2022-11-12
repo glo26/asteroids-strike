@@ -1,0 +1,687 @@
+{
+	"name": "Start",
+	"layers": [
+		{
+			"name": "bg",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Bg",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 14,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 803048359860305,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0,
+				0,
+				0,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "ui",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "logo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 13,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 144.6157628212586,
+						"y": 61.95600035683666,
+						"width": 184.49675977750607,
+						"height": 65.84228114559748,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AsteroidsStrikeTitle",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 15,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 651,
+						"y": 203,
+						"width": 671,
+						"height": 329,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GameText",
+					"properties": {
+						"text": "please login using metamask",
+						"enable-bbcode": true,
+						"font": "Dispence",
+						"size": 14,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.7803921568627451,
+							0.7803921568627451,
+							0.7803921568627451,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 18,
+					"instanceVariables": {
+						"use": "info"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 14,
+						"y": 400,
+						"width": 1256,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 310125703241623,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "buttons",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Button",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "purple",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 23,
+					"instanceVariables": {
+						"use": "shop"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 642,
+						"y": 549,
+						"width": 320,
+						"height": 52,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GameText",
+					"properties": {
+						"text": "Shop",
+						"enable-bbcode": true,
+						"font": "Dispence",
+						"size": 14,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 24,
+					"instanceVariables": {
+						"use": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 490,
+						"y": 536,
+						"width": 306,
+						"height": 29,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Button",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "orange",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {
+						"use": "buy ticket"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1151,
+						"y": 72,
+						"width": 224,
+						"height": 37,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GameText",
+					"properties": {
+						"text": "buy ticket",
+						"enable-bbcode": true,
+						"font": "Dispence",
+						"size": 14,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 22,
+					"instanceVariables": {
+						"use": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1071,
+						"y": 60,
+						"width": 168,
+						"height": 29,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GameText",
+					"properties": {
+						"text": "you have 10 tickets left",
+						"enable-bbcode": true,
+						"font": "Dispence",
+						"size": 14,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							0.7843137254901961,
+							0,
+							1
+						],
+						"horizontal-alignment": "right",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 20,
+					"instanceVariables": {
+						"use": "ticket"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1014,
+						"y": 30,
+						"width": 494,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Button",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "purple",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 61,
+					"instanceVariables": {
+						"use": "scoreboard"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 616,
+						"width": 320,
+						"height": 52,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GameText",
+					"properties": {
+						"text": "Scoreboard",
+						"enable-bbcode": true,
+						"font": "Dispence",
+						"size": 14,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 62,
+					"instanceVariables": {
+						"use": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 488,
+						"y": 600,
+						"width": 306,
+						"height": 29,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 457496301950568,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "login",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Button",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "purple",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 16,
+					"instanceVariables": {
+						"use": "start"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 642,
+						"y": 476,
+						"width": 320,
+						"height": 52,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GameText",
+					"properties": {
+						"text": "Login",
+						"enable-bbcode": true,
+						"font": "Dispence",
+						"size": 14,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 17,
+					"instanceVariables": {
+						"use": "start"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 490,
+						"y": 463,
+						"width": 306,
+						"height": 29,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 377423532727355,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 783024010947473,
+	"nonworld-instances": [
+		{
+			"type": "FirebaseV9SDK",
+			"properties": {
+				"debug": false,
+				"sdk-instance": 912304082775672,
+				"timeout": 5,
+				"auto-load": true,
+				"firebaseConfig": " const firebaseConfig = {\n    apiKey: \"AIzaSyDnsgsMyD5CDiupt69WQ2_0iuM6Uu8RTXU\",\n    authDomain: \"galaxygang-75f2a.firebaseapp.com\",\n    databaseURL: \"https://galaxygang-75f2a-default-rtdb.asia-southeast1.firebasedatabase.app\",\n    projectId: \"galaxygang-75f2a\",\n    storageBucket: \"galaxygang-75f2a.appspot.com\",\n    messagingSenderId: \"26887229569\",\n    appId: \"1:26887229569:web:2c590575c198247710bd80\",\n    measurementId: \"G-FF5PEHDR55\"\n\n  };\n\n",
+				"versionFB": "9.12.1",
+				"isAuthFB": false,
+				"isDbFB": true,
+				"isFirestore": false,
+				"isStorageFB": false,
+				"isAnalytics": false,
+				"isAppCheck": false,
+				"captchaKey": "",
+				"isRemoteConfig": false,
+				"config-minFetchTime": 43200,
+				"config-default": "{}",
+				"remove_app": "",
+				"remove_auth": "",
+				"remove_database": "",
+				"remove_firestore": "",
+				"remove_storage": ""
+			},
+			"uid": 25,
+			"instanceVariables": {}
+		},
+		{
+			"type": "FirebaseV9RDBasic",
+			"properties": {
+				"sdk-instance": 912304082775672,
+				"user-data": "userAccount",
+				"user-lb": "userLeaderboard"
+			},
+			"uid": 26,
+			"instanceVariables": {}
+		},
+		{
+			"type": "JSONScore",
+			"properties": {},
+			"uid": 57,
+			"instanceVariables": {}
+		},
+		{
+			"type": "PerksData",
+			"properties": {
+				"width": 0,
+				"height": 3,
+				"depth": 1
+			},
+			"uid": 73,
+			"instanceVariables": {}
+		},
+		{
+			"type": "PlayerPerks",
+			"properties": {},
+			"uid": 75,
+			"instanceVariables": {}
+		}
+	],
+	"effectTypes": [],
+	"width": 1280,
+	"height": 720,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "e_start"
+}

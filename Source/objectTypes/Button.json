@@ -1,0 +1,68 @@
+{
+	"name": "Button",
+	"plugin-id": "Sprite",
+	"sid": 254228968237619,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "use",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 428371156027417
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 320,
+						"height": 52,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5806429,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 293234252180176,
+				"name": "purple",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 224,
+						"height": 37,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5146899,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 296582324940314,
+				"name": "orange",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

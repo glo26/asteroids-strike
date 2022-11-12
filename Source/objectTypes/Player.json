@@ -1,0 +1,88 @@
+{
+	"name": "Player",
+	"plugin-id": "Sprite",
+	"sid": 722263670199436,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Car",
+			"name": "Car",
+			"sid": 950639338268361
+		},
+		{
+			"behaviorId": "wrap",
+			"name": "Wrap",
+			"sid": 389064712098742
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 630286592365995
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 257410144643087
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 68,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6248486,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.2673031026252983,
+								0.30258899676375384,
+								0,
+								0.6472491909385113,
+								0,
+								0.9902912621359226,
+								0.4964200477326967,
+								0.6359223300970874,
+								1,
+								0.29773462783171506,
+								1,
+								0,
+								0.7482100238663487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.9789644012944984,
+								"y": 0.5
+							},
+							{
+								"name": "Image Point 2",
+								"x": -0.02,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 138589008840306,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

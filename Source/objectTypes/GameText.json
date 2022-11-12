@@ -1,0 +1,17 @@
+{
+	"name": "GameText",
+	"plugin-id": "Text",
+	"sid": 761777189626312,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "use",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 319731853289446
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,88 @@
+{
+	"name": "Enemy",
+	"plugin-id": "Sprite",
+	"sid": 849617085191634,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "hp",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 336106115319225
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 688340086802866
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 945193598271668
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 60,
+						"height": 81,
+						"originX": 0.556,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9436501,
+						"collisionPoly": {
+							"points": [
+								0.228,
+								0.739766081871345,
+								0.044,
+								0.5,
+								0.23,
+								0.26315789473684215,
+								0.556,
+								0.032163742690058506,
+								0.946,
+								0.2149122807017544,
+								0.876,
+								0.5,
+								0.946,
+								0.7865497076023392,
+								0.556,
+								0.9692982456140351
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.9333333333333333,
+								"y": 0.25925925925925924
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.95,
+								"y": 0.7530864197530864
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 751886477551659,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
