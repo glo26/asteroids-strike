@@ -6,11 +6,11 @@ Galaxy Gang is an indie team aiming to bring the play-to-earn experience that mo
 
 Galaxy Gang Asteroids Strike is a blockchain-run arcade game inspired by the classic Asteroids game. Players can purchase ‘credits’ using crypto to play. 
 
-A game running on the Polygon Chain created for the Galaxy Gang Universe, modeled after the infamous Asteroids-style Retro Style. We will also follow with 'Crazy Rich Club' within the Galaxy Gang Universe in fixing the problem of lack of transparency in defi gaming ecosystem.
+A game running on the Polygon Chain created for the Galaxy Gang Universe, modeled after the infamous Asteroids-style Retro Style. We will also follow with 'Crazy Rich Club' within the Galaxy Gang Universe in fixing the problem of lack of transparency in defi gaming ecosystem. The tech stacks used include Moralis, Polygon Chain, Firebase + Google Cloud Network, Multichain, followed by Moralis Metaverse SDK (soon).
 
 --
 
-# Details: Galaxy Gang Asteroids Strike
+# Details: Galaxy Gang - Asteroids Strike
 
 Purpose: Similar to the classic, they can shoot and move around to dodge incoming asteroids and other obstacles to survive for points. Players who are high on the leaderboard will be rewarded with cash prize and more!
 
