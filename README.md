@@ -1,8 +1,6 @@
 # Asteroids Strike
 
-A blockchain-based game running on Polygon created for the Galaxy Gang Universe, modeled after the infamous Asteroids-style Retro Style.
-
-We will also follow with 'Crazy Rich Club' within the Galaxy Gang Universe in fixing the problem of lack of transparency in defi gaming ecosystem.
+A blockchain-based game running on Polygon created for the Galaxy Gang Universe, modeled after the infamous Asteroids-style Retro Style. We will also follow with 'Crazy Rich Club' within the Galaxy Gang Universe in fixing the problem of lack of transparency in defi gaming ecosystem.
 
 --
 
