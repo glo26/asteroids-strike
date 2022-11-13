@@ -22,10 +22,10 @@ Rewards: Players on the leaderboard every week gets rewards in the form of $USDT
 
 Go to: https://galaxygang-75f2a.web.app/
 
-1. Player logs in to Metamask.
-2. They connect to the Polygon network.
+1. Players log in to Metamask.
+2. Players connect to the Polygon network.
 3. They can then log in to Asteroids Strike with Metamask.
-4. Players will be given a virtual spaceship.
+4. Players will be given a virtual spaceship (NFT Asset on Polygon chain).
 5. Players have to buy fuel for their spaceship before playing using $USDT ($USDT 1 = 3 fuel). 1 round of gameplay takes up 1 fuel.
 6. Players can get permanent upgrades to their spaceships in the in-game shop using their $USDT as well.
 7. Players are able to top up as needed to increase winning based on skill-based performance rather than chance-based opportunities.
