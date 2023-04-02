@@ -1,8 +1,6 @@
 # Abstract: Galaxy Gang - Asteroids Strike
 
-Galaxy Gang is an indie team aiming to bring the play-to-earn experience that mobile users have been waiting for onto their smartphones through addicting games with fair gameplay and tokenomics.
-
-We want to revive the fun of casual retro gaming while rewarding committed players with token incentives and other rewards.
+Galaxy Gang is an indie team aiming to bring the play-to-earn experience that mobile users have been waiting for onto their smartphones through addicting games with fair gameplay and tokenomics. We aim to revive the fun of casual retro gaming while rewarding committed players with token incentives and other rewards.
 
 # About the defi Gaming Platform:
 
