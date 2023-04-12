@@ -2,7 +2,7 @@
 
 Galaxy Gang is an indie team aiming to bring the play-to-earn experience that mobile users have been waiting for onto their smartphones through addicting games with fair gameplay and tokenomics. We aim to revive the fun of casual retro gaming while rewarding committed players with token incentives and other rewards.
 
-# About Our deFi Gaming Platform:
+# About Our deFi Gaming Platform
 
 Galaxy Gang Asteroids Strike is a blockchain-run arcade game inspired by the classic Asteroids game. Players can purchase ‘credits’ using crypto to play. It is geared toward the gaming communities in Southeast Asia, as the game allows for a lower barrier of cost to entry compared to other P2E games in the industry.
 
@@ -34,5 +34,5 @@ NFT Assets: Every item in the shop except consumables are NFTs – this means th
 
 Roadmap: We will also follow with 'Crazy Rich Club' within the Galaxy Gang Universe in fixing the problem of lack of transparency in defi gaming ecosystem. See: https://github.com/glo26/crazyrichclub. 
 
-# Contact Us
+# Contact Us:
 galaxygangteam@gmail.com
