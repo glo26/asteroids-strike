@@ -36,3 +36,5 @@ Roadmap: We will also follow with 'Crazy Rich Club' within the Galaxy Gang Unive
 
 # Contact Us:
 galaxygangteam@gmail.com
+
+Copyright © 2020-2023. Spero Studios x Galaxy Gang Universe - Asteroids Strike. All Rights Reserved.
