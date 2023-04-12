@@ -8,8 +8,6 @@ Galaxy Gang Asteroids Strike is a blockchain-run arcade game inspired by the cla
 
 It also recognizes 'low data' mode to accommodate for more players to join the web3 community with less friction. The tech stacks used include Moralis, Polygon Chain, Firebase + Google Cloud Network, Multichain, followed by Moralis Metaverse SDK (soon).
 
---
-
 # About the Game: Asteroids Strike
 
 Purpose: Similar to the classic, they can shoot and move around to dodge incoming asteroids and other obstacles to survive for points. Players who are high on the leaderboard will be rewarded with cash prize and more!
